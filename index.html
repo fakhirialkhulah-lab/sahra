@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="سهرة — منصة لاكتشاف الأفلام والمسلسلات العربية المستقلة المرخّصة.">
+  <title>سهرة | Sahra</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="سهرة">
+      <span class="brand-mark">س</span><span>سَهرة</span>
+    </a>
+    <nav><a href="#films">الأفلام</a><a href="#series">المسلسلات</a><a href="#about">عن سهرة</a></nav>
+    <button class="login" id="loginBtn">تسجيل الدخول</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">حكايات تستحق سهرتك</p>
+        <h1>السينما العربية،<br><span>بروح جديدة.</span></h1>
+        <p class="hero-text">اكتشف أفلامًا ومسلسلات عربية مستقلة — ضمن مكتبة تكبر بمحتوى يملك أصحابه حقوق عرضه.</p>
+        <a class="primary" href="#films">اكتشف المكتبة <span>←</span></a>
+        <p class="note">نسخة تجريبية للواجهة — المشاهدة والاشتراكات غير مفعّلة بعد.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="poster poster-back"><span>حكايات</span></div>
+        <div class="poster poster-front"><small>SAHRA ORIGINALS</small><strong>آخر<br>الليل</strong><i>قريبًا</i></div>
+        <div class="gold-orb"></div>
+      </div>
+    </section>
+
+    <section class="section" id="films">
+      <div class="section-head"><div><p class="eyebrow">اختيارات سهرة</p><h2>أفلام مقترحة</h2></div><span class="muted">محتوى تجريبي</span></div>
+      <div class="cards">
+        <article class="movie-card"><div class="cover cover-one"><span>01</span><b>بين مدينتين</b></div><h3>بين مدينتين</h3><p>دراما · فيلم قصير</p><button class="details" data-title="بين مدينتين" data-desc="نموذج تجريبي لبطاقة فيلم. أضف لاحقًا فيلمًا تملك حق بثه.">التفاصيل</button></article>
+        <article class="movie-card"><div class="cover cover-two"><span>02</span><b>ظلّ الحكاية</b></div><h3>ظلّ الحكاية</h3><p>غموض · فيلم قصير</p><button class="details" data-title="ظلّ الحكاية" data-desc="هذا عنوان تجريبي وليس فيلمًا متاحًا للمشاهدة حاليًا.">التفاصيل</button></article>
+        <article class="movie-card"><div class="cover cover-three"><span>03</span><b>قهوة المساء</b></div><h3>قهوة المساء</h3><p>اجتماعي · فيلم قصير</p><button class="details" data-title="قهوة المساء" data-desc="يمكن استبدال هذه البطاقة بمحتوى مستقل مرخّص بموافقة صاحبه.">التفاصيل</button></article>
+      </div>
+    </section>
+
+    <section class="series" id="series">
+      <div><p class="eyebrow">قريبًا على سهرة</p><h2>المسلسلات<br>لها مكانها أيضًا.</h2><p>واجهة قابلة للتطوير لإضافة المواسم والحلقات عند توفر حقوق العرض.</p></div>
+      <div class="series-stamp">SAHRA<br><span>قريبًا</span></div>
+    </section>
+
+    <section class="about" id="about"><p class="eyebrow">عن المنصة</p><h2>سهرة تبدأ بفكرة،<br>وتكبر بحكايات أصحابها.</h2><p>هذه النسخة هي واجهة أولية فقط. لا يوجد حاليًا تسجيل حسابات أو دفع أو تشغيل فيديو. يجب الحصول على حقوق بث مناسبة قبل نشر أي فيلم أو مسلسل.</p></section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">س</span><span>سَهرة</span></a><span>© 2026 Sahra · نسخة تجريبية</span></footer>
+
+  <dialog id="infoDialog"><button class="close" id="closeDialog" aria-label="إغلاق">×</button><p class="eyebrow">تفاصيل العمل</p><h2 id="dialogTitle"></h2><p id="dialogDesc"></p><p class="dialog-note">المشاهدة غير متاحة في النسخة التجريبية.</p></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
